@@ -13,7 +13,7 @@ export default class CadastroPage extends BasePage {
   }
 
   async preencherCamposValidos(): Promise<void> {
-      await this.lojinhaElements.getBotaoCookies().click();
+    await this.lojinhaElements.getBotaoCookies().click();
     await this.lojinhaElements.getCampoNome().fill('Lucas');
     await this.lojinhaElements.getCampoEmail().fill('lucas@a.com');
     await this.lojinhaElements.getCampoTelefone().fill('123456789');

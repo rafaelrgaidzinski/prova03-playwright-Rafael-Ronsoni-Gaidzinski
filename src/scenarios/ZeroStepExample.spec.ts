@@ -1,13 +1,14 @@
 import { test } from '@playwright/test';
 import { ai } from '@zerostep/playwright';
 
-test.skip('zerostep example', async ({ page }) => {
-  await page.goto('https://5elementslearning.dev/demosite/index.php');
+test('zerostep example', async ({ page }) => {
+  await page.goto('https://www.practicetestqa.xyz/forms');
 
   const aiArgs = { page, test };
-  await ai('Click in Hardware category', aiArgs);
-  await ai('Click in Matrox G400 32MB', aiArgs);
-  await ai('Click in Add to Cart button', aiArgs);
-  await ai('Change quantity to 7', aiArgs);
-  await ai('Click in Checkout button', aiArgs);
+  await ai('Fill the username field with: Rafael', aiArgs);
+  await ai('Fill the email field with: rafael@gmail.com', aiArgs);
+  await ai('Fill the password field using faker.internet.password', aiArgs);
+  await ai('Click the checkbox Email Notifications', aiArgs);
+  await ai('Click the button submit', aiArgs);
+  await ai('Scroll the page to the top', aiArgs);
 });
