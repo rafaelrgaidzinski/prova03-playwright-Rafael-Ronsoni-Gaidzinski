@@ -1,6 +1,6 @@
 # Playwright E2E - Rafael Ronsoni Gaidzinski
 
-### https://www.tigremaniacos.com.br/cadastro
+### Site: https://www.tigremaniacos.com.br/cadastro
 
 ## GitHub Actions + SonarCloud
 
